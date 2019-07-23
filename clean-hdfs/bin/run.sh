@@ -1,4 +1,6 @@
 #!/bin/bash
+#加载工作客户的环境变量，防止出现依赖环境变量问题
+source /home/work/.bashrc
 #进入当前程序执行路径，避免不同路径执行导致的问题
 run_pwd="$(cd "$(dirname "$0")" && pwd)"
 cd $run_pwd/../
